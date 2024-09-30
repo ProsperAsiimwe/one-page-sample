@@ -1,11 +1,5 @@
-import react from "react"
-import GlobalStyle from "./GlobalStyles"
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  BrowserRouter,
-} from "react-router-dom";
+import GlobalStyle from "./GlobalStyles";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./compoents/Navbar/Navbar";
 import Home from "./Pages/HomePage/Home";
 import Services from "./Pages/Services/Services";
@@ -23,7 +17,6 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/services" component={Services} />
         <Route path="/products" component={Products} />
-
       </Switch>
       <Footer />
     </Router>
